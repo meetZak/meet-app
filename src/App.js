@@ -29,29 +29,29 @@ class App extends Component {
   }
 
 
-  updateEvents = (location, inputNumber) => {
+  updateEvents = (location, eventCount) => {
     const { selectedLocation } = this.state;
     if (location) {
       getEvents().then((events) => {
         const locationEvents = (location === 'all') ?
           events :
           events.filter((event) => event.location === location);
-        const eventsToShow = locationEvents.slice(0, inputNumber);
+        const eventsToShow = locationEvents.slice(0, eventCount);
         this.setState({
           events: eventsToShow,
-          selectedLocation: location,
-          numberOfEvents: inputNumber
-        });
+          selectedCity: location,
+          eventCount: eventCount
+          });
       });
     } else {
       getEvents().then((events) => {
         const locationEvents = (selectedLocation === 'all') ?
           events :
           events.filter((event) => event.location === selectedLocation);
-        const eventsToShow = locationEvents.slice(0, inputNumber);
+        const eventsToShow = locationEvents.slice(0, eventCount);
         this.setState({
           events: eventsToShow,
-          numberOfEvents: inputNumber 
+          eventCount: eventCount
         });
       })
     }
