@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/abuyusr/meet-app.git/static/css/main.cade3552.css",
-    "main.js": "/abuyusr/meet-app.git/static/js/main.e72b6725.js",
+    "main.js": "/abuyusr/meet-app.git/static/js/main.205162bf.js",
     "static/js/787.78696b9d.chunk.js": "/abuyusr/meet-app.git/static/js/787.78696b9d.chunk.js",
     "service-worker.js": "/abuyusr/meet-app.git/service-worker.js",
     "index.html": "/abuyusr/meet-app.git/index.html",
     "main.cade3552.css.map": "/abuyusr/meet-app.git/static/css/main.cade3552.css.map",
-    "main.e72b6725.js.map": "/abuyusr/meet-app.git/static/js/main.e72b6725.js.map",
+    "main.205162bf.js.map": "/abuyusr/meet-app.git/static/js/main.205162bf.js.map",
     "787.78696b9d.chunk.js.map": "/abuyusr/meet-app.git/static/js/787.78696b9d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cade3552.css",
-    "static/js/main.e72b6725.js"
+    "static/js/main.205162bf.js"
   ]
 }
