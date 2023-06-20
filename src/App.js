@@ -7,6 +7,7 @@ import NumberOfEvents from "./NumberOfEvents";
 import "./nprogress.css";
 
 
+
 class App extends Component {
   state = {
     events: [],
