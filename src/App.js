@@ -15,10 +15,12 @@ class App extends Component {
     locations: [],
     eventCount: 32,
     selectedCity: null,
+    warningText: "",
   }
 
   componentDidMount() {
     this.mounted = true;
+    this.promptOfflineWarning();
     getEvents().then((events) => {
       if (this.mounted) {
       this.setState({ events, locations: extractLocations(events) });
@@ -28,6 +30,14 @@ class App extends Component {
 
   componentWillUnmount(){
     this.mounted = false;
+  }
+
+  promptOfflineWarning = () => {
+    if (!navigator.onLine) {
+      this.setState({
+        warningText: 'You are offline, so events may not be up to date'
+      })
+    }
   }
 
 
@@ -65,7 +75,7 @@ class App extends Component {
         <CitySearch  locations={this.state.locations} updateEvents={this.updateEvents} />
         <EventList events={this.state.events} />
         <NumberOfEvents numberOfEvents={this.state.numberOfEvents} updateEvents={this.updateEvents} />
-        <WarningAlert text={this.state.infoText} />
+        <WarningAlert text={this.state.warningText} />
       </div>
     );
   }
