@@ -1,5 +1,5 @@
 
-const mockData = [
+export const mockData = [
  
   {
     "kind": "calendar#event",
@@ -15062,6 +15062,3 @@ const mockData = [
     "eventType": "default"
    }
   ]
- 
-
-export { mockData };
