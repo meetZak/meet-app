@@ -2,7 +2,7 @@
   "name": "meet-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://abuyusr.github.io/meet-app/",
+  "homepage": "https://meetzak.github.io/meet-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^11.2.7",
